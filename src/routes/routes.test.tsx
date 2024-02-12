@@ -1,8 +1,9 @@
-import { act, render, screen, waitFor } from "@__tests__/utils/customRender";
+import { screen } from "@testing-library/react-native";
 import { Routes } from "."
 import { saveStorageCity } from "@libs/asyncStorage/cityStorage"
 import { api } from "@services/api";
 import { mockWeatherAPIResponse } from "@__tests__/mocks/api/mockWeatherAPIResponse";
+import { render, act, waitFor } from "@__tests__/utils/customRender";
 
 describe("Routes", () => {
 
@@ -18,9 +19,9 @@ describe("Routes", () => {
 
         const city = {
             id: '1',
-            name: 'Jaboatão dos Guararapes',
-            latitude: 123,
-            longitude: 456
+            name: 'Recife',
+            longitude: 123,
+            latitude: 456
         } 
 
         await saveStorageCity(city); 

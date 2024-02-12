@@ -14,7 +14,7 @@ describe("Component: WeatherItem", () => {
         );
 
         const title = screen.getByText("Umidade do ar");
-        const value = screen.getByText("82%");
+        const value = screen.getByText("81%");
 
         expect(title).toBeTruthy();
         expect(value).toBeTruthy();

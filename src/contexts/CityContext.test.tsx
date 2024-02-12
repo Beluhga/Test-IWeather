@@ -6,7 +6,7 @@ describe("Context: CityContext", () => {
     it("deveria ser mudar a cidade selecionada", async () => {
         const data = {
             id: '1',
-            name: 'Jaboatão dos Guararapes',
+            name: 'Recife',
             latitude: 123,
             longitude: 456
         }

@@ -34,4 +34,10 @@ incluir no jest.config.json
       "^.+\\.svg$": "jest-transformer-svg"
     }
 
+ ----------------npm run test:coverage---------
+ 
+                    ou
+                    
+------------------ npm test---------------------                  
+
 */

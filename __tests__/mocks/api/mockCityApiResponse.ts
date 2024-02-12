@@ -2,7 +2,7 @@ import { CityAPIResponse } from "@services/getCityByNameService";
 
 export const mockCityApiResponse: CityAPIResponse = {
     id: '1',
-    name: "Pernambuco",
+    name: "Recife",
     sys: {
         country: 'BR'
     },
