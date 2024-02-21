@@ -9,8 +9,8 @@ on:
 
 jobs:
     CI:
-    name: Continuos Integration
-    runs-on: ubuntu-latest
+      name: Continuos Integration
+      runs-on: ubuntu-latest
 
     steps:
       - name: Checkout repository
