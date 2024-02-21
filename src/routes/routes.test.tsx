@@ -18,10 +18,10 @@ describe("Routes", () => {
         jest.spyOn(api, "get").mockResolvedValue({ data: mockWeatherAPIResponse})
 
         const city = {
-            id: '1',
-            name: 'Recife',
+            id: "1",
+            name: "São Paulo",
             longitude: 123,
-            latitude: 456
+            latitude: 456,
         } 
 
         await saveStorageCity(city); 
@@ -29,6 +29,7 @@ describe("Routes", () => {
         await act(() => waitFor(() => render(<Routes />)));
         
         const title = screen.getByText(city.name);
+        
         expect(title).toBeTruthy();
     })
 })

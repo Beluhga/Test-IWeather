@@ -19,11 +19,9 @@ export function CityProvider({ children }: CityContextProviderProps) {
   const [cityIsLoading, setCityIsLoading] = useState(true);
   const [city, setCity] = useState<CityProps | null>(null);
 
-  // no momento que a pessoa seleciona uma cidade
   async function handleChanceCity(selectedCity: CityProps) {
     setCityIsLoading(true);
 
-    // ela vai atualizar o store
     await saveStorageCity(selectedCity);
     setCity(selectedCity);
 
@@ -32,9 +30,9 @@ export function CityProvider({ children }: CityContextProviderProps) {
 
   useEffect(() => {
     setCityIsLoading(true);
-    removeStorageCity();
+    // removeStorageCity();
 
-    getStorageCity() // busca as informações no storage, de forma assincrona
+    getStorageCity() 
       .then((data) => setCity(data))
       .finally(() => setCityIsLoading(false));
   }, []);

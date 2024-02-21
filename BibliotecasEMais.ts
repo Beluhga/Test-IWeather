@@ -38,6 +38,13 @@ incluir no jest.config.json
  
                     ou
                     
------------------- npm test---------------------                  
+------------------ npm test--------------------- 
 
+ PUBLICAR APP --------------------------- Expo.dev
+
+ npm install -g eas-cli
+
+ -------- o APK do projeto-----------
+
+ https://expo.dev/artifacts/eas/5WFAnqBhGjvghU8ibaoYtQ.apk
 */

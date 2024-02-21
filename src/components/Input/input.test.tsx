@@ -8,7 +8,6 @@ describe("Component: Input", () => {
 
         
         const activityIndicator = screen.queryByTestId("activity-indicator")
-        // vai verificar se tem o componente renderizado (IsLoading) to tipo undefined
         expect(activityIndicator).toBeNull();
         
     });
@@ -17,7 +16,6 @@ describe("Component: Input", () => {
         render(<Input isLoading/>);
     
         const activityIndicator = screen.getByTestId("activity-indicator");
-        // vai verificar se tem o componente renderizado (IsLoading) to tipo true
         expect(activityIndicator).toBeTruthy();
     
     
